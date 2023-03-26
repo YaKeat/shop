@@ -1,0 +1,8 @@
+* {
+	box-sizing: border-box;
+}
+body {
+	background-color: #fff0f4;
+	font-family: 'Montserrat';
+	margin: 0;
+}

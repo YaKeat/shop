@@ -1,0 +1,78 @@
+
+
+/*
+
+	КАТАЛОГ.
+	Блоки товаров
+
+*/
+
+
+.products-wrapper {
+	display: flex;
+	flex-wrap: wrap; /* перенос карточек на новую строку */
+	margin: .5em;
+}
+.product-wrapper {
+	width: 17em;
+	padding: .5em;
+}
+	.product-box {
+		border-radius: 0.5em;
+		box-shadow: 0 .2em 0.3em rgb(0 0 0 / 20%);
+		overflow: hidden;
+		background-color: #fff;
+	}
+		.product-image {
+			width: 100%;
+			min-height: 14em;
+			background-size: auto 100%;
+			background-repeat: no-repeat;
+			background-position: center;
+			background-image: url(../images/imgfish.jpeg);
+		}
+		.product-data {
+			padding: 1em 1em;
+		}
+			.product-art {
+				color: #ccc;
+				font-size: .7em;
+				margin-bottom: 0.5em;
+			}
+			.product-title {
+				height: 4em;
+				display: block;
+				text-decoration: none;
+				color: #000;
+			}
+		.product-cart {
+			display: flex;
+			justify-content: space-between;
+			align-items: center;
+			margin-top: 0.5em;
+		}
+			.product-price {
+				font-weight: 600;
+			}
+				.product-price span {
+					font-size: 1.2em;
+				}
+			.cart-add {
+				border-radius: .3em;
+				background-color: #ff8f8f;
+				padding: .5em 1em;
+				color: #fff;
+				display: inline-block;
+				cursor: pointer;
+				background: linear-gradient(#ff3161, #c9113c) #ff3161;
+			}
+				.cart-add:hover {
+					background: linear-gradient(#ff4a74, #f81e51) #ff3161;
+				}
+
+@media screen and (max-width: 640px){
+	.product-wrapper {
+		width: 100%;
+		min-width: none;
+	}
+}
